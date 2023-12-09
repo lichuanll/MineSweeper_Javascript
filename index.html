@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Title</title>
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        .images
+        {
+            position: center;
+        }
+        .upload-form {
+            position: center;
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .upload-label {
+            position: center;
+            font-size: 18px;
+            margin-right: 10px;
+        }
+
+        .upload-input {
+            position: center;
+            padding: 5px;
+        }
+
+        .upload-button {
+            position: center;
+            padding: 8px 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .upload-button:hover {
+            background-color: #45a049;
+
+        }
+        td>div.mine {
+            background: #ccc url("Image/lei.png") center/cover no-repeat;
+            opacity: 0;
+        }
+        td>div.flag {
+            background: #ccc url("Image/flag.gif") center/cover no-repeat;
+            opacity: 1;
+        }
+        td>div.error{
+            background-color: rgb(216,0,0);
+        }
+    </style>
+</head>
+<body>
+
+<!-- 游戏最外层容器 -->
+<div class="container">
+    <!-- 游戏标题 -->
+    <h1>扫雷大作战</h1>
+    <!-- 游戏难度选择 -->
+    <div class="level">
+        <button class="active">初级</button>
+        <button>中级</button>
+        <button>高级</button>
+    </div>
+    <div class="big">
+        <div class="info1">分数: <span class="score"></span></div>
+        <div class="info2">用时:<span class="time"></span></div>
+        <!-- 扫雷区域，应该通时 JS 动态来生成 -->
+        <div class="mineArea"></div>
+
+    </div>
+
+</div>
+
+
+
+
+
+<script src="js/tool.js"></script>
+<script src="js/config.js"></script>
+<script src="js/index.js"></script>
+
+<script>
+
+</script>
+</body>
+</html>
